@@ -4,10 +4,19 @@ class DataEntryCreator extends React.Component {
     constructor(props) {
         super(props);
         console.log(props);
-        this.state = {value:''};
+        this.state = {
+            name: "name",
+            type:"entry",
+        };
+
+
         this.handleChange = this.handleChange.bind(this);
         this.handleBlur = this.handleBlur.bind(this);
     }
+  
+        
+    
+
 
     handleChange(event) {
         const target = event.target;
@@ -19,15 +28,14 @@ class DataEntryCreator extends React.Component {
         });
     }
 
+
     handleBlur(event) {
-        this.props.updateEntry(this.state);
+        const key = this.state.name.replace(/[^a-zA-Z]/g, "");
+        const entry = this.state;
+        console.log(key, entry);
+        this.props.addEntry(key,entry);
+
     }
-
-
-
-
-
-
 
 
 
@@ -35,12 +43,18 @@ class DataEntryCreator extends React.Component {
     render() {
         return (
             <div>
-            <button>Add Entry</button>
+                <button onClick={this.handleBlur}>Add Entry</button>
                 <label>Name</label>
-                <input name="name" value={""}
+                <input name="name" value={this.state.name}
                     onChange={this.handleChange}
-                    onBlur={this.handleBlur}
+                    
                 />
+                <label>type</label>
+                <select name="type" value={this.state.type} onChange={this.handleChange}>
+                    <option>category</option>
+                    <option>entry</option>
+
+                </select>
                 </div>
         );
     }

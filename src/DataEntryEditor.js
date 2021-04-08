@@ -26,7 +26,9 @@ class DataEntryEditor extends React.Component {
         this.props.updateEntry(this.state);
     }
     
-    render(){
+    render() {
+
+        const categories = this.props.categories.map(cat => (<option value={cat.key}>{cat.name}</option>));
         return (
             <div>
 
@@ -36,10 +38,11 @@ class DataEntryEditor extends React.Component {
                     onBlur={this.handleBlur}
                     />
                 <label>Parent</label>
-                <input parent="parent" value={this.state.parent}
-                    onChange={this.handleChange}
-                    onBlur={this.handleBlur}
-                />
+                <select onChange={this.handleChange}
+                    onBlur={this.handleBlur} parent="parent" value={this.state.parent}>
+                    {categories}
+                </select>
+
                 <label>
                     <input type="checkbox" name="license" checked={this.state.license}
                         onChange={this.handleChange}

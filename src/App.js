@@ -47,7 +47,8 @@ class App extends React.Component {
 
   addEntry(key, entry) {
     var data = this.state.data;
-    data[key] = entry;
+      data[key] = entry;
+      console.log(data);
     this.setState({data: data});
   }
   
