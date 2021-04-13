@@ -41,7 +41,9 @@ class DataEntryCreator extends React.Component {
 
 
     render() {
+        const categories = this.props.categories.map(cat => (<option value={cat.key}>{cat.name}</option>));
         return (
+       // 
             <div>
                 <button onClick={this.handleBlur}>Add Entry</button>
                 <label>Name</label>
@@ -54,6 +56,11 @@ class DataEntryCreator extends React.Component {
                     <option>category</option>
                     <option>entry</option>
 
+                </select>
+                <label>Parent</label>
+                <select onChange={this.handleChange}
+                    onBlur={this.handleBlur} parent="parent" value={this.state.parent}>
+                    {categories}
                 </select>
                 </div>
         );

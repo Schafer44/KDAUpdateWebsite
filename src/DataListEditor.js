@@ -17,7 +17,7 @@ function DataListEditor(props) {
                 {entries}
             </div>
             <div>
-                <DataEntryCreator addEntry={  props.addEntry} />
+                <DataEntryCreator addEntry={props.addEntry} categories={categories}  />
             </div>
         </div>
     );
