@@ -6,12 +6,13 @@ class DataEntryCreator extends React.Component {
         console.log(props);
         this.state = {
             name: "name",
-            type:"entry",
+            type: "entry",
+            parent:"Home"
         };
 
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleBlur = this.handleBlur.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
   
         
@@ -22,19 +23,21 @@ class DataEntryCreator extends React.Component {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
-
+        
         this.setState({
             [name]: value
         });
+     
     }
 
 
-    handleBlur(event) {
+    handleSubmit(event) {
         const key = this.state.name.replace(/[^a-zA-Z]/g, "");
         const entry = this.state;
         console.log(key, entry);
-        this.props.addEntry(key,entry);
-
+        this.props.addEntry(key, entry);
+        
+        
     }
 
 
@@ -45,7 +48,7 @@ class DataEntryCreator extends React.Component {
         return (
        // 
             <div>
-                <button onClick={this.handleBlur}>Add Entry</button>
+                <button onClick={this.handleSubmit} >Add Entry</button>
                 <label>Name</label>
                 <input name="name" value={this.state.name}
                     onChange={this.handleChange}
@@ -58,8 +61,8 @@ class DataEntryCreator extends React.Component {
 
                 </select>
                 <label>Parent</label>
-                <select onChange={this.handleChange}
-                    onBlur={this.handleBlur} parent="parent" value={this.state.parent}>
+                <select 
+                    name="parent" value={this.state.parent} onChange={this.handleChange}>
                     {categories}
                 </select>
                 </div>

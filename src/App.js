@@ -13,11 +13,13 @@ class App extends React.Component {
       showJson: false,
       data: {},
       updates: {},
-      alerts: {}
+      alerts: {},
+      parent: {}
     }
     this.updateEntry = this.updateEntry.bind(this);
     this.addEntry = this.addEntry.bind(this);
-    this.removeEntry = this.removeEntry.bind(this);
+      this.removeEntry = this.removeEntry.bind(this);
+      this.disChildren = this.disChildren.bind(this);
   }
 
   componentDidMount() {
@@ -34,24 +36,48 @@ class App extends React.Component {
   }
 
   updateEntry(key, entry) {
-    var data = this.state.data;
-    data[key] = entry;
-    this.setState({data: data});
+      var data = this.state.data;
+      var parentId = data[key].parent;
+      var parents = data[parentId];
+      delete parents.children[key];
+      data[key] = entry;
+      console.log("namas",data[key]);
+      //this.setState({ data: data });
+      var newparentid = data[key].parent;
+      var newParent = data[newparentid]
+      newParent.children[key] = entry.name; 
+      this.setState({ data: data });
+     
   }
 
   removeEntry(key) {
     var data = this.state.data;
-    delete data[key];
+      
+      var parentId = data[key].parent;
+      var parent = data[parentId];
+      delete parent.children[key];
+      delete data[key];
     this.setState({data: data});
   }
 
   addEntry(key, entry) {
     var data = this.state.data;
       data[key] = entry;
-      console.log(data);
+      var parent = data[entry.parent];
+      parent.children[key] = entry.name; 
+   
+      console.log( entry);
     this.setState({data: data});
   }
-  
+
+    disChildren(key) {
+        var data = this.state.data;
+        var parent = data[key];
+        return parent.children;
+    }
+
+
+
   render() { 
     var obj = {
       data: this.state.data, 
@@ -64,8 +90,8 @@ class App extends React.Component {
     );
     return (
       <div className="editor">
-        <a href={`data:application/json,${json}`} download="data.json" target="_blank">Download current data file</a>
-        <DataListEditor data={this.state.data} updateEntry={this.updateEntry} addEntry={this.addEntry} removeEntry={this.removeEntry}/>
+            <a href={`data:application/json,${json}`} download="data.json" target="_blank">Download current data file</a>
+            <DataListEditor data={this.state.data} updateEntry={this.updateEntry} addEntry={this.addEntry} removeEntry={this.removeEntry} />
       </div>
     );
   }
