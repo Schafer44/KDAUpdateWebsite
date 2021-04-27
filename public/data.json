@@ -1,18 +1,30 @@
 {
   "updates": {
-    "No Updates Yet": {
-      "title": "No Updates Yet",
-      "preview": "No Updates Yet",
-      "description": "Since this is a newly released app there have been no updates.",
+    "New Website": {
+      "title": "New Website",
+      "preview": "New Website",
+      "description": "Welcome to our new more searchable database of KSRE/KDA’s Foods Sold Direct to Consumers in Kansas: Regulations and Food Safety Best Practices (http://www.bookstore.ksre.ksu.edu/pubs/MF3138.pdf).  We updated the printed publication in Jan 2021, and those updates are also reflected in this database.",
       "date": "(\"02-8-2021\")"
     }
   },
   "alerts": {
-    "No alerts given": {
-      "title": "No alerts given",
-      "preview": "\"No alerts given,",
-      "description": "No alerts have been given at this time.",
-      "date": "(\"02-8-2021\")"
+    "COVID-related guidance": {
+      "title": "COVID-related guidance",
+      "preview": "KDA provided updated COVID-related guidance to farmers markets",
+      "description": "KDA provided updated COVID-related guidance to farmers markets on February 10, 2021, which is available from the top of this page: https://fromthelandofkansas.com/page/farmers-market-resources",
+      "date": "(\"04-2-2021\")"
+    },
+    "Upcoming food safety-related trainings": {
+      "title": "Upcoming food safety-related trainings",
+      "preview": "KSRE has their upcoming food safety-related trainings available",
+      "description": "KSRE has their upcoming food safety-related trainings available from: https://www.ksre.k-state.edu/foodsafety/",
+      "date": "(\"04-2-2021\")"
+    },
+    "KSRE has produce safety resources": {
+      "title": "KSRE has produce safety resources",
+      "preview": "KSRE has produce safety resources, as well as upcoming trainings, available",
+      "description": "KSRE has produce safety resources, as well as upcoming trainings, available on our website: https://www.ksre.k-state.edu/foodsafety/produce/index.html",
+      "date": "(\"04-2-2021\")"
     }
   },
   "data": {
@@ -184,8 +196,6 @@
       "description": "",
       "examples": "Cookies, breads, cakes, cinnamon rolls, fruit pies, fruit cobbler",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Follow labeling requirements (listed below). Note that breads with cheese baked in/on them require testing to determine their category (see testing table below).",
       "children": {
@@ -204,8 +214,6 @@
       "description": "",
       "examples": "icing on cinnamon rolls",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "If the icing is known to contain >65% sugar, testing and licensing is not needed. Otherwise, testing and possibly licensing is required (see testing table)."
     },
@@ -216,8 +224,6 @@
       "description": "",
       "examples": "Cookie mix, brownie mix",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Follow labeling requirements (listed below)"
     },
@@ -228,8 +234,6 @@
       "description": "",
       "examples": "Tomatoes, melons, okra, apples, basil, garlic scapes",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "May be home grown; any pesticide use must comply with label directions."
     },
@@ -240,8 +244,6 @@
       "description": "",
       "examples": "Mixed greens with only intact leaves, includes microgreens and shoots (not cut beyond normal harvesting practices)",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Follow weights and measures requirements. Note that all sprouts and any greens cut beyond normal harvesting require a license."
     },
@@ -252,8 +254,6 @@
       "description": "",
       "examples": "Cut berries, cut herbs, cut carrots, zucchini noodles, etc. Can be frozen, fresh, or dried. ",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "If product is blanched before freezing and has a pH above 4.2, licensing is required for frozen foods. If not blanched first, no licensing required."
     },
@@ -264,8 +264,6 @@
       "description": "",
       "examples": "Walnuts, pecans, peanut butter",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "May be sold shelled or in shell. Peanut and other nut butters can also be sold direct to consumer without licensing."
     },
@@ -276,8 +274,6 @@
       "description": "",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Can sell direct to consumer without licensing. Note that sales of packaged honey to grocery stores (including consignment sales) for resale or sales by an individual that did not package the honey requires a KDA Food Processors License."
     },
@@ -288,8 +284,6 @@
       "description": "",
       "examples": "Chicken, duck, goose, turkey, etc.",
       "license": "Is not required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Growers raising fewer than 1,000 birds/year can slaughter and sell direct to consumer their own birds at their own facility without registration or inspection. Growers selling 1,001 to 20,000 birds/year must obtain a KDA Meat & Poultry Wholesaler license with a poultry exemption. The cost of a license is $25 per calendar year. More details available in",
       "regulationURL": "https://agriculture.ks.gov/docs/default-source/meat-and-poultry/poultry-exemption-5-1-19.pdf?sfvrsn=43488bc1_4"
@@ -301,8 +295,6 @@
       "description": "",
       "examples": "Chicken/duck/goose/turkey, etc.",
       "license": "Is not required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Should be sold at <45F. Cartons should be clean and labeled properly. (Temperature control and labeling strongly suggested for establishments with fewer than 50 hens; temperature control and labeling required for farms with 51 to 249 hens, must be ungraded. Licensing (and grading) required with > 249 hens or if selling graded eggs.)"
     },
@@ -313,8 +305,6 @@
       "description": "More info to come",
       "examples": "Fruit jams and jellies (note that reduced or no-sugar jams or jellies require a product assessment)",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Must follow labeling requirements."
     },
@@ -325,8 +315,6 @@
       "description": "More info to come",
       "examples": "Apple juice, apple cider, vegetable juices",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "No license required if sold packaged (served by the glass requires license.) If not pasteurized, must include a warning statement on the label (see p. 58, Kansas Food Code. Can be put into bottles or jugs, but not sealed or heat filled to be exempt.",
       "regulationURL": "https://agriculture.ks.gov/docs/default-source/fsl--handouts/2012_kda_food_code_12_14_12.pdf"
@@ -338,8 +326,6 @@
       "description": "More info to come",
       "examples": "Canned applesauce, canned fruits",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Must follow labeling requirements. Requirements for other canned foods listed below. "
     },
@@ -350,8 +336,6 @@
       "description": "More info to come",
       "examples": "Cinnamon hard candy; caramels, toffee",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Note: homemade chocolates must be tested to determine if license is needed (see testing table on page 5)."
     },
@@ -362,8 +346,6 @@
       "description": "More info to come",
       "examples": "Whole tilapia, shrimp",
       "license": "Is not required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "No HACCP plan or processing license required. Note that wild caught fish sales are illegal without a commercial fishing permit from Kansas Department of Wildlife, Parks and Tourism. See K.S.A. 115 17 10 and 115 17 13 for more information."
 
@@ -375,8 +357,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Note the regulations listed below for wild mushrooms."
     },
@@ -387,8 +367,6 @@
       "description": "More info to come",
       "examples": "Sandwiches, pizza, potato salad, etc. prepared and sold by any entity intended to be eaten at the market — six or fewer times per calendar ye",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "No licensing required; however, must follow “Sanitation and hygiene requirements for exempt food establishments”. No licensing required; however, must follow Kansas Administrative Regulations (KAR) 4-28-33 “Sanitation and hygiene requirements for exempt food establishments”. More details also in KAR 4-28-34 (Exemption from licensure; definitions). Note that this would also include cooking classes and competitions, such as BBQ competitions."
 
@@ -400,8 +378,6 @@
       "description": "More info to come",
       "examples": "Sandwiches, pizza, etc. prepared and sold by 4-H groups, church groups, schools, etc. (with no staff paid by the proceeds of the food sales).",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "No licensing required; however, must follow (Sanitation and hygiene requirements for exempt food establishments). Fundraising for community or humanitarian purposes and educational or youth activities is exempt from licensing with no restriction on number of times done per year."
     },
@@ -412,8 +388,6 @@
       "description": "More info to come",
       "examples": "Burritos, egg rolls, pizza, grilled hamburgers or other meats; lemonade",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "If selling more than six times/year, vendor must have a KDA Food Establishment license. Note that a Food Processing License would be required for any WHOLESALE sales."
     },
@@ -424,8 +398,6 @@
       "description": "More info to come",
       "examples": "Frozen bierocks, pork rinds, refrigerated noodles, pesto, refrigerator pickles, refrigerated salsa, etc.",
       "license": "The food product can be made on day one and each day they are sold adds to the total of up to 6 days without a license.",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "The food product can be made on day one and each day they are sold adds to the total of up to 6 days without a license. Must follow (Sanitation and hygiene requirements for exempt food establishments) indicated above. Products such as pesto need to be cooled quickly and held at < 41F for no more than 6 days after preparing. Note that any products that require specialized processing* require advance approval even if it is for 6 or fewer days."
 
@@ -437,8 +409,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "No licensing required if dried in a protected environment in a short time period "
 
@@ -450,8 +420,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "No licensing needed if the product meets the standard of identity in 21 CFR 169.175 to ensure it is vanilla extract and not a flavored alcohol. "
 
@@ -463,8 +431,6 @@
       "description": "More info to come",
       "examples": "Cinnamon, cloves, etc.",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Product must be labeled properly, unadulterated, and sold in a sanitary manner"
 
@@ -476,8 +442,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "No licensing required if sold direct to consumer."
 
@@ -489,8 +453,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "RAW peppers must be used in making pepper vinegar to sell without a license"
 
@@ -502,8 +464,6 @@
       "description": "More info to come",
       "examples": "Fresh tarragon, fresh garlic, fresh basil poured over with vinegar",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Unless using low acid vinegar (pH>4.2) or enough herbs included to raise equilibrium pH above 4.2, product does NOT require a license."
 
@@ -515,8 +475,6 @@
       "description": "More info to come",
       "examples": "Home-ground flour, cornmeal, popcorn, intact grain",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Standard hygiene and sanitation requirements, as with all food sold"
 
@@ -528,8 +486,6 @@
       "description": "More info to come",
       "examples": "Apricot leather, other fruits",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Standard hygiene and sanitation requirements, as with all food sold"
 
@@ -541,8 +497,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Samples must be prepared and served in a sanitary manner. More details available in the KSRE/KDA publication MF3311 on Sampling Safely at Kansas Farmers Markets.)",
       "regulationURL": "https://bookstore.ksre.k-state.edu/pubs/MF3311.pdf"
@@ -555,8 +509,6 @@
       "description": "More info to come",
       "examples": "Milk, cheese, yogurt, etc. from cows, goats, other mammals",
       "license": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Pasteurized and processed at KDA licensed Dairy Manufacturing Plant; food establishment license required at point of sale. Note that if a vendor can provide information about a vacuum packaged cheese to show that it does not require refrigeration for safety (typically low water activity and low pH values), a food establishment license would NOT be required for the point of sale. "
 
@@ -568,8 +520,6 @@
       "description": "More info to come",
       "examples": "Cheesecake, cream filled cupcakes or donuts, cream cheese-based frostings or fillings, cream or meringue pies, custards, pumpkin pie, quiche",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Food establishment license required at production facility and point of sale. "
 
@@ -581,8 +531,6 @@
       "description": "More info to come",
       "examples": "Refrigerated or frozen cookie dough, pizza dough",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Product requires temperature control for safety, so a food establishment license is required."
     },
@@ -593,8 +541,6 @@
       "description": "More info to come",
       "examples": "Steaks, ground beef, fresh sausages, turkey, chicken, catfish",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Product must be processed at a fully inspected facility, pre-packaged and properly labeled. A KDA Meat & Poultry Wholesale license must be obtained before any product is sold, regardless if the target audience is the end consumer or a wholesale account.  Product may be sold refrigerated or frozen solid."
 
@@ -606,8 +552,6 @@
       "description": "More info to come",
       "examples": "Jerky, summer sausage and similar products",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Product must be inspected by KDA or USDA and sold at the appropriate temperature. Note that any curing of meat using nitrites requires proper licensing."
     },
@@ -618,8 +562,6 @@
       "description": "More info to come",
       "examples": "Degutted tilapia",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA food establishment or food processing license at preparation facility, Hazard Analysis, food establishment license at the point of sale. An HACCP plan is also needed if any hazards are identified as being reasonably likely to occur. Note that wild caught fish sales are illegal without a commercial fishing permit from KDWPT."
     },
@@ -630,8 +572,6 @@
       "description": "More info to come",
       "examples": "Vacuum-packaged cheese or vacuum-packaged meats requiring refrigeration for safety",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Must follow the above listed requirements of cheese or meat products or whatever category the food is in."
     },
@@ -642,8 +582,6 @@
       "description": "More info to come",
       "examples": "Alfalfa sprouts, bean sprouts",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA food establishment license required at production facility and point of sale."
     },
@@ -654,8 +592,6 @@
       "description": "More info to come",
       "examples": "Cut or torn lettuce (cut beyond normal harvesting) ",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA food establishment license required at production facility and point of sale. Must be sold at or below 41F."
 
@@ -667,8 +603,6 @@
       "description": "More info to come",
       "examples": "Cut melons, cut tomatoes",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA food establishment license required at production facility and point of sale."
     },
@@ -679,8 +613,6 @@
       "description": "More info to come",
       "examples": "Roasted garlic, “black” garlic, roasted corn",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Temperature control is required for safety; therefore, KDA license is required. Note that even if you are selling raw produce and providing roasting services on site, you would still need a license. Must wash before roasting."
     },
@@ -691,8 +623,6 @@
       "description": "More info to come",
       "examples": "Morel mushrooms",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is required",
       "testingRequired": "Is not required",
       "regulation": "Mushrooms picked in the wild must be individually inspected for safety by a KDA registered mushroom identifier. More information available in the Selling Fresh Produce section."
     },
@@ -703,8 +633,6 @@
       "description": "More info to come",
       "examples": "Sauerkraut, kimchi, kombucha",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA Food Establishment License required for production facility."
     },
@@ -715,8 +643,6 @@
       "description": "More info to come",
       "examples": "Pickles (includes pickled vegetables and pickled eggs), hot sauces, canned tomatoes. Canned vegetables, meats, cake/bread baked in a jar",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA Food Establishment License or Food Processors License required for production facility. Requires recipe approval; Better Process Control School (BPCS) required. KDA Meat and Poultry inspection required if canned meat is sold wholesale. Contact Kansas State University Value Added Foods Lab for more information on recipe approval and BPCS",
       "regulationURL": "https://www.ksrevenue.org/abcstatutes.html"
@@ -728,8 +654,6 @@
       "description": "More info to come",
       "examples": "Beer, wine, possibly kombucha drinks",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Kansas Dept. of Revenue alcohol licensing requirements.",
       "regulationURL": "https://www.ksrevenue.org/abcstatutes.html"
@@ -741,8 +665,6 @@
       "description": "More info to come",
       "examples": "Infused cooking olive oils; garlic in oil mixtures",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA Food Establishment License or Food Processors License required for production facility. If finished product is not shelf stable, food establishment license also required for point of sale."
 
@@ -754,8 +676,6 @@
       "description": "More info to come",
       "examples": "Pet food/treats — regardless of the type of ingredients in the pet treats (meat or grain, etc.)",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Kansas commercial feed license and small pet product application required. Food safety license not required (may be made in a home kitchen). Guaranteed analysis for protein, fat, and fiber, and ingredient statement required on label. (More information available from: programs/dairy inspection/feed safety/feed licenses)",
       "regulationURL": "https://agriculture.ks.gov/divisions"
@@ -767,8 +687,6 @@
       "description": "More info to come",
       "examples": "Bone broth",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "If includes less than 2% meat or poultry (after cooking), KDA Food Establishment licence required (for direct to consumer sales). KDA Food processing license required if selling wholesale. If canned and sold shelf stable, follow acidified or low acid canned food requirements (see above)."
     },
@@ -779,8 +697,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is required",
       "regulation": "If product is determined to have low water activity, product can be sold without a license. Otherwise, KDA license required. Read the Regulatory Requirements for Direct to Consumer Sales",
       "regulationURL": "https://agriculture.ks.gov/divisions-programs/food-safety-lodging/food-safety-licenses",
@@ -793,8 +709,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is required",
       "regulation": "If product is determined to be an acid food, formulated acid, or low water activity food, no license is required. Otherwise, KDA license required. Read the Regulatory Requirements for Direct to Consumer Sales",
       "regulationURL": "https://agriculture.ks.gov/divisions-programs/food-safety-lodging/food-safety-licenses",
@@ -807,8 +721,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is required",
       "regulation": "Depending on the pH of the final product and the main product ingredients, the product may be exempt from licensing or may be considered an acidified canned food that requires a license (see information on acidified foods in table above).",
       "testingRequiredURL": "https://www.ksre.k-state.edu/kvafl/"
@@ -820,8 +732,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is required",
       "regulation": "If product is determined to require temperature control for safety in a product assessment, KDA license is required. Otherwise, no license is required.",
       "testingRequiredURL": "https://www.ksre.k-state.edu/kvafl/"
@@ -833,9 +743,7 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is required",
-      "temperatureControl": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above \n https://agriculture.ks.gov/divisions-programs/food-safety-lodging/food-safety-licenses",
-      "snapEligible": "Is not required",
-      "testingRequired": "Is required",
+      "temperatureControl": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above \n https://agriculture.ks.gov/divisions-programs/food-safety-lodging/food-safety-licenses","testingRequired": "Is required",
       "regulation": "If the filling is determined to require temperature control based on its water activity, KDA license is required. Otherwise, no license is required.",
       "testingRequiredURL": "https://www.ksre.k-state.edu/kvafl/"
     },
@@ -846,8 +754,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is required",
       "regulation": "Often used on cinnamon rolls and similar products. If product is determined to have low water activity, product can be sold without a license. Otherwise, KDA license required. Read the Regulatory Requirements for Direct to Consumer Sales Note that if the icing is known to contain >65% sugar, testing and licensing is not needed.",
       "regulationURL": "https://agriculture.ks.gov/divisions-programs/food-safety-lodging/food-safety-licenses",
@@ -860,9 +766,7 @@
       "description": "More info to come",
       "examples": "",
       "license": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "temperatureControl": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "snapEligible": "Is not required",
-      "testingRequired": "Is required",
+      "temperatureControl": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above","testingRequired": "Is required",
       "regulation": "If product is determined to have low water activity and thus not require refrigeration for safety, product can be sold without a license. Otherwise, KDA license required. Read the Regulatory Requirements for Direct to Consumer Sales",
       "regulationURL": "https://agriculture.ks.gov/divisions-programs/food-safety-lodging/food-safety-licenses",
       "testingRequiredURL": "https://www.ksre.k-state.edu/kvafl/"
@@ -874,9 +778,7 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is required",
-      "temperatureControl": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "snapEligible": "Is not required",
-      "testingRequired": "Is required",
+      "temperatureControl": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above","testingRequired": "Is required",
       "regulation": "If the product is determined to have pH below 4.6 and that it can be safely stored at room temperature, product can be sold direct to consumer without a license. Otherwise, KDA license is required. ",
       "regulationURL": "https://agriculture.ks.gov/divisions-programs/food-safety-lodging/food-safety-licenses",
       "testingRequiredURL": "https://www.ksre.k-state.edu/kvafl/"
@@ -888,8 +790,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Read the 'Regulatory Requirements for Direct to Consumer Sales' information listed above",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is required",
       "regulation": "If product is determined to be a low water activity food, no license is required. Otherwise, KDA license is required.",
       "testingRequiredURL": "https://www.ksre.k-state.edu/kvafl/"
@@ -902,8 +802,6 @@
       "description": "",
       "examples": "",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": ""
     },
@@ -914,8 +812,6 @@
       "description": "",
       "examples": "",
       "license": "Is required",
-      "temperatureControl": "Is required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Must be processed at an inspected facility; note the poultry exemption indicated in the table that begins on page 2."
     },
@@ -926,8 +822,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Note: homemade chocolates must be tested to determine if license is needed (see testing table on page 5)."
     },
@@ -938,8 +832,6 @@
       "description": "More info to come",
       "examples": "",
       "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "Product must be labeled properly, unadulterated, and sold in a sanitary manner."
     },
@@ -950,8 +842,6 @@
       "description": "More info to come",
       "examples": "Sprouted buckwheat",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA Food Establishment License required for production facility."
     },
@@ -962,8 +852,6 @@
       "description": "More info to come",
       "examples": "Used for production of kombucha",
       "license": "Is required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
       "testingRequired": "Is not required",
       "regulation": "KDA Food Establishment License required for production facility."
     }

@@ -46,31 +46,24 @@ class DataEntryEditor extends React.Component {
                         onChange={this.handleChange}
                   
                         />
-                    Requires license control
-                </label>
-
-                <label>
-                    <input type="checkbox" name="temperatureControl" checked={this.state.temperatureControl}
-                        onChange={this.handleChange}
-                    
-                    />
-                    Requires temperature control
-                </label>
-                <label>
-                    <input type="checkbox" name="snapEligible" checked={this.state.snapEligible}
-                        onChange={this.handleChange}
-                  
-                    />
-                    Requires snap Eligible control
+                    Requires license
                 </label>
                 <label>
                     <input type="checkbox" name="testingRequired" checked={this.state.testingRequired}
                         onChange={this.handleChange}
                        
                     />
-                    Requires testingRequired control
+                    Requires Testing
                 </label>
 
+                <label>Description</label>
+                <input name="description" value={this.state.description} 
+                    onChange={this.handleChange} 
+                />
+                <label>Examples</label>
+                <input name="examples" value={this.state.examples} 
+                    onChange={this.handleChange} 
+                />    
                 {
                 // description 
                 // examples 
