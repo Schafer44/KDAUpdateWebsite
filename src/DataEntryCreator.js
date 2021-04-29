@@ -74,22 +74,25 @@ class DataEntryCreator extends React.Component {
        <>
             <div>
                 <button onClick={this.handleSubmit} >Add Entry</button>
+                <br></br>
                 <label>Name</label>
                 <input name="name" value={this.state.name}
                     onChange={this.handleChange}
                     
                 />
+                <br></br>
                 <label>type</label>
                 <select name="type" value={this.state.type} onChange={this.handleChange}>
                     <option>entry</option>
 
                 </select>
+                <br></br>
                 <label>Parent</label>
                 <select 
                     name="parent" value={this.state.parent} onChange={this.handleChange}>
                     {categories}
                 </select>
-
+                <br></br>
                 <label>
                     <input type="checkbox" name="license" checked={this.state.license}
                         onChange={this.handleChange}
@@ -97,6 +100,7 @@ class DataEntryCreator extends React.Component {
                         />
                     Requires license
                 </label>
+                <br></br>
                 <label>
                     <input type="checkbox" name="testingRequired" checked={this.state.testingRequired}
                         onChange={this.handleChange}
@@ -104,11 +108,12 @@ class DataEntryCreator extends React.Component {
                     />
                     Requires Testing
                 </label>
-
+                <br></br>
                 <label>Description</label>
                 <input name="description" value={this.state.description} 
                     onChange={this.handleChange} 
                 />
+                <br></br>
                 <label>Examples</label>
                 <input name="examples" value={this.state.examples} 
                     onChange={this.handleChange} 
@@ -117,16 +122,19 @@ class DataEntryCreator extends React.Component {
                 </div>
                 <div>
                 <button onClick={this.handleSubmit2} >Add Category</button>
+                <br></br>
                 <label>Name</label>
                 <input name="name" value={this.state.name}
                     onChange={this.handleChange}
                     
                 />
+                <br></br>
                 <label>type</label>
                 <select name="type" value={"category"} onChange={this.handleChange}>
                     <option>category</option>
 
                 </select>
+                <br></br>
                 <label>Parent</label>
                 <select 
                     name="parent" value={this.state.parent} onChange={this.handleChange}>
