@@ -29,18 +29,20 @@ class DataEntryEditor extends React.Component {
      
         return (
             <div>
-              
+                <p>{this.state.name}</p>
+                <br></br>
                 <label>Name</label>
                 <input name="name" value={this.state.name} 
                     onChange={this.handleChange} 
                
                     />
+                    <br></br>
                 <label>Parent</label>
                 <select onChange={this.handleChange}
                  name="parent" value={this.state.parent}>
                     {categories}
                 </select>
-
+                <br></br>
                 <label>
                     <input type="checkbox" name="license" checked={this.state.license}
                         onChange={this.handleChange}
@@ -48,6 +50,7 @@ class DataEntryEditor extends React.Component {
                         />
                     Requires license
                 </label>
+                <br></br>
                 <label>
                     <input type="checkbox" name="testingRequired" checked={this.state.testingRequired}
                         onChange={this.handleChange}
@@ -55,11 +58,8 @@ class DataEntryEditor extends React.Component {
                     />
                     Requires Testing
                 </label>
-
-                <label>Description</label>
-                <input name="description" value={this.state.description} 
-                    onChange={this.handleChange} 
-                />
+                <br></br>
+                
                 <label>Examples</label>
                 <input name="examples" value={this.state.examples} 
                     onChange={this.handleChange} 

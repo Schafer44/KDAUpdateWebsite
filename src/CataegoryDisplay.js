@@ -53,25 +53,27 @@ class CataegoryDisplay extends React.Component {
         ): "";
         return (
             <div>
-
- 
-
+                <p>{this.state.name}</p>
+                <br></br>
                 <label>Name</label>
                 <input name="name" value={this.state.name}
                     onChange={this.handleChange}
                     onBlur={this.handleBlur}
                 />
+                <br></br>
                 <label>Parent</label>
                 <select onChange={this.handleChange}
                     onBlur={this.handleBlur} name="parent" value={this.state.parent}>
                     {categories}
                 </select>
+                <br></br>
                 <label>children</label>
                 <select name="children" onChange={this.handleChange}
                     onBlur={this.handleBlur} value={this.state.parent}>
                     {childrens}
                     
                 </select>
+                
                 {buttons}
     
             </div>

@@ -89,7 +89,9 @@ class App extends React.Component {
       <div>Loading...</div>
     );
     return (
+      
       <div className="editor">
+          <br></br>
             <a href={`data:application/json,${json}`} download="data.json" target="_blank">Download current data file</a>
             <DataListEditor data={this.state.data} updateEntry={this.updateEntry} addEntry={this.addEntry} removeEntry={this.removeEntry} />
       </div>

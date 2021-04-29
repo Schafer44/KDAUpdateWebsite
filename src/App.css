@@ -1,3 +1,31 @@
+h2 {
+  color: white;
+  background-color: #512888;
+  text-align:center;
+  margin: 0;
+}
+h2:after {
+  content: ' ';
+  display: block;
+  border: 10px solid #512888;
+}
+p{
+  text-align:center;
+  margin: 0;
+  font-size: 20px;
+}
+
+div{
+  content: ' ';
+  display: block;
+  border: 3px solid #512888;
+}
+div:after
+{
+  content: ' ';
+  display: block;
+  border: 4px solid #512888;
+}
 .App {
   text-align: center;
 }
@@ -27,7 +55,11 @@
 .App-link {
   color: #61dafb;
 }
-
+.editor{
+  text-align:center;
+  margin: 0;
+  font-size: 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

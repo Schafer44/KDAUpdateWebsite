@@ -25,14 +25,28 @@ function DataListEditor(props) {
 
     return (
         <div class="data-list-editor">
+                <h2>
+                <br>
+                </br>
+                <b>Categories</b>
+                </h2>
             <div class="data-list-items-category">
                 {categoriesType}
             </div>
-
+                <h2>
+                <br>
+                </br>
+                <b>Entries</b>
+                </h2>
             <div class="data-list-items">
                 {entries}
             </div>
             <div>
+            <h2>
+                <br>
+                </br>
+                <b>Add Entry or Category</b>
+                </h2>
                 <DataEntryCreator addEntry={props.addEntry}  categories={categories} />
             </div>
         </div>
