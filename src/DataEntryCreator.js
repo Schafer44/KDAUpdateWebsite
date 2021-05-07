@@ -94,20 +94,27 @@ class DataEntryCreator extends React.Component {
                 </select>
                 <br></br>
                 <label>
-                    <input type="checkbox" name="license" checked={this.state.license}
-                        onChange={this.handleChange}
-                  
-                        />
-                    Requires license
+                Requires license
                 </label>
+                <select onChange={this.handleChange}
+                 name="license" value={this.state.license}>
+                    <option>Is not required</option>
+                    <option>Is required</option>
+                </select>
+                    
                 <br></br>
+
+
+
+
                 <label>
-                    <input type="checkbox" name="testingRequired" checked={this.state.testingRequired}
-                        onChange={this.handleChange}
-                       
-                    />
-                    Requires Testing
+                Requires Testing
                 </label>
+                <select onChange={this.handleChange}
+                 name="testingRequired" value={this.state.testingRequired}>
+                    <option>Is not required</option>
+                    <option>Is required</option>
+                </select>
                 <br></br>
                 <label>Description</label>
                 <input name="description" value={this.state.description} 
