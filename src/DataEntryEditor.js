@@ -25,7 +25,7 @@ class DataEntryEditor extends React.Component {
     
     render() {
 
-        const categories = this.props.categories.map(cat => (<option value={cat.home}>{cat.name}</option>));
+        const categories = this.props.categories.map(cat => (<option value={cat.key}>{cat.name}</option>));
      
         return (
             <div>

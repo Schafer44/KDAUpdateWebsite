@@ -66,6 +66,7 @@ addAlert(key, entry) {
       var data = this.state.data;
       var parentId = data[key].parent;
       var parents = data[parentId];
+      console.log("test4",parents);
       delete parents.children[key];
       data[key] = entry;
       //this.setState({ data: data });

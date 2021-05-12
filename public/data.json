@@ -204,7 +204,7 @@
         "icing": "Icing with >65% sugar",
         "breadWithCheeseBakedInOrOnTop": "Bread with cheese baked in/on top",
         "pecanPie": "Pecan Pie",
-        "bakedProductsWithPotentialHazards": "Baked products with potentially hazardous dairy and egg  products",
+        "bakedProductsWithPotentialHazards": "Baked products with potentially hazardous dairy and egg products",
         "PowderedSugarAndMilkIcing": "Powdered sugar/ milk icing"
       }
     },
@@ -576,7 +576,7 @@
     "bakedProductsWithPotentialHazards": {
       "type": "entry",
       "parent": "bakedGoods",
-      "name": "Baked products with potentially hazardous dairy and egg  products",
+      "name": "Baked products with potentially hazardous dairy and egg products",
       "description": "More info to come",
       "examples": "Cheesecake, cream filled cupcakes or donuts, cream cheese-based frostings or fillings, cream or meringue pies, custards, pumpkin pie, quiche",
       "license": "Is required",
