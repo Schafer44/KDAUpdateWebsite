@@ -190,16 +190,9 @@
       }
     },
     "bakedGoods": {
-      "type": "entry",
+      "type": "category",
       "parent": "OtherFoodProducts",
       "name": "Baked goods (home kitchen)",
-      "description": "",
-      "examples": "Cookies, breads, cakes, cinnamon rolls, fruit pies, fruit cobbler",
-      "license": "Is not required",
-      "temperatureControl": "Is not required",
-      "snapEligible": "Is not required",
-      "testingRequired": "Is not required",
-      "regulation": "Follow labeling requirements (listed below). Note that breads with cheese baked in/on them require testing to determine their category (see testing table below).",
       "children": {
         "icing": "Icing with >65% sugar",
         "breadWithCheeseBakedInOrOnTop": "Bread with cheese baked in/on top",
