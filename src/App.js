@@ -24,6 +24,10 @@ class App extends React.Component {
       this.updateAlert = this.updateAlert.bind(this);
     this.addAlert = this.addAlert.bind(this);
       this.removeAlert = this.removeAlert.bind(this);
+
+      this.updateUpdate = this.updateUpdate.bind(this);
+      this.addUpdate = this.addUpdate.bind(this);
+        this.removeUpdate = this.removeUpdate.bind(this);
   }
 
   componentDidMount() {
@@ -42,25 +46,51 @@ class App extends React.Component {
 
 
   updateAlert(key, entry) {
-    var data = this.state.data;
-    data[key] = entry;
-    console.log("nana",data[key]);
+    var alerts = this.state.alerts;
+    alerts[key] = entry;
+    console.log("nana",alerts[key]);
     //this.setState({ data: data });
-    this.setState({ data: data });
+    this.setState({ alerts: alerts });
    
 }
 
 removeAlert(key) {
-  var data = this.state.data;
-  delete data[key];
-  this.setState({data: data});
+  var alerts = this.state.alerts;
+  delete alerts[key];
+  this.setState({alerts: alerts});
 }
 
 addAlert(key, entry) {
-  var data = this.state.data;
-  data[key] = entry;
-  this.setState({data: data});
+  var alerts = this.state.alerts;
+  alerts[key] = entry;
+  console.log("test51",alerts)
+  this.setState({alerts: alerts});
 }
+
+
+updateUpdate(key, entry) {
+  var updates = this.state.updates;
+  updates[key] = entry;
+  console.log("nana",updates[key]);
+  //this.setState({ data: data });
+  this.setState({ updates: updates });
+ 
+}
+
+removeUpdate(key) {
+var updates = this.state.updates;
+delete updates[key];
+this.setState({updates: updates});
+}
+
+addUpdate(key, entry) {
+var updates = this.state.updates;
+updates[key] = entry;
+console.log("test51",updates)
+this.setState({updates: updates});
+}
+
+
 
   updateEntry(key, entry) {
       var data = this.state.data;
@@ -117,7 +147,7 @@ addAlert(key, entry) {
       <div className="editor">
           <br></br>
             <a href={`data:application/json,${json}`} download="data.json" target="_blank">Download current data file</a>
-            <DataListEditor dataAlerts={this.state.alerts} dataUpdates={this.state.updates} data={this.state.data} updateEntry={this.updateEntry} addEntry={this.addEntry} removeEntry={this.removeEntry} updateAlert={this.updateAlert} addAlert={this.addAlert} removeAlert={this.removeAlert}/>
+            <DataListEditor dataAlerts={this.state.alerts} dataUpdates={this.state.updates} data={this.state.data} updateEntry={this.updateEntry} addEntry={this.addEntry} removeEntry={this.removeEntry} updateAlert={this.updateAlert} addAlert={this.addAlert} removeAlert={this.removeAlert} updateUpdate={this.updateUpdate} addUpdate={this.addUpdate} removeUpdate={this.removeUpdate}/>
       </div>
     );
   }

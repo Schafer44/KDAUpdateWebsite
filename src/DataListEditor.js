@@ -17,8 +17,8 @@ function DataListEditor(props) {
 
     var updates = Object.keys(props.dataUpdates).filter(key => props.dataUpdates[key]).map(key => (
         <UpdatesDisplay key={key} item={props.dataUpdates[key]}
-            removeAlert={() => props.removeAlert(key)}
-            updateAlert={(entry) => props.updateAlert(key, entry)}
+            removeUpdate={() => props.removeUpdate(key)}
+            updateUpdate={(entry) => props.updateUpdate(key, entry)}
 
             
         />

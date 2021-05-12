@@ -31,11 +31,23 @@ class UpdatesDisplay extends React.Component {
  
 
     handleSubmit(event) {
+        if(this.props.updateAlert === undefined )
+        {
+            this.props.updateUpdate(this.state);
+        }
+        else{
         this.props.updateAlert(this.state);
+        }
     }
     handleDelete(event) {
    
-        this.props.removeAlert(this.state.key);
+        if(this.props.removeAlert === undefined )
+        {
+            this.props.removeUpdate(this.state);
+        }
+        else{
+        this.props.removeAlert(this.state);
+        }
         
     }
 

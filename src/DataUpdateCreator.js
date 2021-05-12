@@ -11,7 +11,7 @@ class DataUpdateCreator extends React.Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleSubmit2 = this.handleSubmit2.bind(this);
+        this.handleSubmit = this.handleSubmit2.bind(this);
     }
   
         
@@ -38,15 +38,14 @@ class DataUpdateCreator extends React.Component {
         
         
     }
-
     handleSubmit2(event) {
-        const key = this.state.title.replace(/[^a-zA-Z0-9]/g, "");
+        const key = this.state.title.replace(/[^a-zA-Z]/g, "");
         const entry = this.state;
         console.log(key, entry);
-        this.props.addAlert(key, entry);
+        this.props.addUpdate(key, entry);
+        
         
     }
-
 
 
     render() {
@@ -55,7 +54,7 @@ class DataUpdateCreator extends React.Component {
        // 
        <>
             <div>
-                <button onClick={this.handleSubmit} >Add Update</button>
+                <button onClick={this.handleSubmit2} >Add Update</button>
                 <br></br>
                 <label>Title</label>
                 <input name="title" value={this.state.name}
@@ -80,7 +79,7 @@ class DataUpdateCreator extends React.Component {
 
                 </div>
                 <div>
-                <button onClick={this.handleSubmit2} >Add Alert</button>
+                <button onClick={this.handleSubmit} >Add Alert</button>
                 <br></br>
                 <label>Title</label>
                 <input name="title" value={this.state.name}
