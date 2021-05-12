@@ -20,6 +20,10 @@ class App extends React.Component {
     this.addEntry = this.addEntry.bind(this);
       this.removeEntry = this.removeEntry.bind(this);
       this.disChildren = this.disChildren.bind(this);
+
+      this.updateAlert = this.updateAlert.bind(this);
+    this.addAlert = this.addAlert.bind(this);
+      this.removeAlert = this.removeAlert.bind(this);
   }
 
   componentDidMount() {
@@ -35,13 +39,35 @@ class App extends React.Component {
     });
   }
 
+
+
+  updateAlert(key, entry) {
+    var data = this.state.data;
+    data[key] = entry;
+    console.log("nana",data[key]);
+    //this.setState({ data: data });
+    this.setState({ data: data });
+   
+}
+
+removeAlert(key) {
+  var data = this.state.data;
+  delete data[key];
+  this.setState({data: data});
+}
+
+addAlert(key, entry) {
+  var data = this.state.data;
+  data[key] = entry;
+  this.setState({data: data});
+}
+
   updateEntry(key, entry) {
       var data = this.state.data;
       var parentId = data[key].parent;
       var parents = data[parentId];
       delete parents.children[key];
       data[key] = entry;
-      console.log("namas",data[key]);
       //this.setState({ data: data });
       var newparentid = data[key].parent;
       var newParent = data[newparentid]
@@ -51,22 +77,19 @@ class App extends React.Component {
   }
 
   removeEntry(key) {
-    var data = this.state.data;
-      
+      var data = this.state.data;
       var parentId = data[key].parent;
       var parent = data[parentId];
       delete parent.children[key];
       delete data[key];
-    this.setState({data: data});
+      this.setState({data: data});
   }
 
   addEntry(key, entry) {
     var data = this.state.data;
       data[key] = entry;
       var parent = data[entry.parent];
-      parent.children[key] = entry.name; 
-   
-      console.log( entry);
+      parent.children[key] = entry.name;
     this.setState({data: data});
   }
 
@@ -93,7 +116,7 @@ class App extends React.Component {
       <div className="editor">
           <br></br>
             <a href={`data:application/json,${json}`} download="data.json" target="_blank">Download current data file</a>
-            <DataListEditor data={this.state.data} updateEntry={this.updateEntry} addEntry={this.addEntry} removeEntry={this.removeEntry} />
+            <DataListEditor dataAlerts={this.state.alerts} dataUpdates={this.state.updates} data={this.state.data} updateEntry={this.updateEntry} addEntry={this.addEntry} removeEntry={this.removeEntry} updateAlert={this.updateAlert} addAlert={this.addAlert} removeAlert={this.removeAlert}/>
       </div>
     );
   }
