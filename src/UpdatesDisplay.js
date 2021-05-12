@@ -57,7 +57,21 @@ class UpdatesDisplay extends React.Component {
                     onChange={this.handleChange}
                     onBlur={this.handleBlur}
                 />
-                
+                <br></br>
+                <label>Description</label>
+                <input title="description" value={this.state.description} 
+                    onChange={this.handleChange} 
+                />
+                <br></br>
+                <label>Preview</label>
+                <input title="preview" value={this.state.preview} 
+                    onChange={this.handleChange} 
+                />
+                <br></br>
+                <label>Date example=("02-01-21")</label>
+                <input title="date" value={this.state.date} 
+                    onChange={this.handleChange} 
+                />
                 {buttons}
     
             </div>
@@ -68,6 +82,5 @@ class UpdatesDisplay extends React.Component {
     }
 }
 
- 
 
 export default UpdatesDisplay;

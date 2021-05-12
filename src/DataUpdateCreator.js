@@ -5,8 +5,7 @@ class DataUpdateCreator extends React.Component {
         super(props);
         console.log(props);
         this.state = {
-            title: "title",
-            type: "entry"
+            title: "title"
         };
 
 
@@ -35,8 +34,7 @@ class DataUpdateCreator extends React.Component {
         const key = this.state.title.replace(/[^a-zA-Z]/g, "");
         const entry = this.state;
         console.log(key, entry);
-        this.state.type = "entry";
-        this.props.addUpdate(key, entry);
+        this.props.addAlert(key, entry);
         
         
     }
@@ -71,12 +69,12 @@ class DataUpdateCreator extends React.Component {
                 />
                 <br></br>
                 <label>Preview</label>
-                <input name="preview" value={this.state.description} 
+                <input name="preview" value={this.state.preview} 
                     onChange={this.handleChange} 
                 />
                 <br></br>
-                <label>Date</label>
-                <input name="date" value={this.state.description} 
+                <label>Date example=("02-01-21")</label>
+                <input name="date" value={this.state.date} 
                     onChange={this.handleChange} 
                 />
 
@@ -100,7 +98,7 @@ class DataUpdateCreator extends React.Component {
                     onChange={this.handleChange} 
                 />
                 <br></br>
-                <label>Date</label>
+                <label>Date example=("02-01-21")</label>
                 <input name="date" value={this.state.description} 
                     onChange={this.handleChange} 
                 />
