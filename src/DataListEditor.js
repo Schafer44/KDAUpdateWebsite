@@ -4,11 +4,12 @@ import DataEntryCreator from './DataEntryCreator';
 import CataegoryDisplay from './CataegoryDisplay';
 import UpdatesDisplay from './UpdatesDisplay';
 import DataUpdateCreator from './DataUpdateCreator';
+import DataAlertCreator from './DataAlertCreator';
 
 function DataListEditor(props) {
-    var categories = Object.keys(props.data).filter(key => props.data[key].type == "category").map(key => ({ key: key, name: props.data[key].name }))
+    var categories = Object.keys(props.data).filter(key => props.data[key].type === "category").map(key => ({ key: key, name: props.data[key].name }))
 
-    var entries = Object.keys(props.data).filter(key => props.data[key].type == "entry").map(key => (
+    var entries = Object.keys(props.data).filter(key => props.data[key].type === "entry").map(key => (
         <DataEntryEditor key={key} item={props.data[key]} categories={categories} 
             removeEntry={() => props.removeEntry(key)}
             updateEntry={(entry) => props.updateEntry(key, entry)}
@@ -33,7 +34,7 @@ function DataListEditor(props) {
         />
     ));
 
-    var categoriesType = Object.keys(props.data).filter(key => props.data[key].type == "category").map(key => (
+    var categoriesType = Object.keys(props.data).filter(key => props.data[key].type === "category").map(key => (
         <CataegoryDisplay key={key} item={props.data[key]} categories={categories} data={props.data}
             removeEntry={() => props.removeEntry(key)}
             updateEntry={(entry) => props.updateEntry(key, entry)}
@@ -92,9 +93,17 @@ function DataListEditor(props) {
             <h2>
                 <br>
                 </br>
-                <b>Add Alert or Update</b>
+                <b>Add Update</b>
                 </h2>
-                <DataUpdateCreator addAlert={props.addAlert}  addUpdate={props.addUpdate} />
+                <DataUpdateCreator addUpdate={props.addUpdate} />
+            </div>
+            <div>
+            <h2>
+                <br>
+                </br>
+                <b>Add Alert</b>
+                </h2>
+                <DataAlertCreator addAlert={props.addAlert}/>
             </div>
         </div>
     );

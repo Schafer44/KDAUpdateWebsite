@@ -6,7 +6,6 @@ import React from 'react';
 class UpdatesDisplay extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = props.item;
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -54,9 +53,7 @@ class UpdatesDisplay extends React.Component {
  
 
     render() {
-        
-        console.log("hello2",this.props.item);
-        const buttons = (this.state.name != "Home") ? ( 
+        const buttons = (this.state.name !== "Home") ? ( 
                    <> <button onClick={this.handleSubmit}>Edit Update</button>
                    <button onClick={this.props.removeAlert}>Remove Update</button> </>
         ): "";
@@ -65,23 +62,23 @@ class UpdatesDisplay extends React.Component {
                 <p>{this.state.title}</p>
                 <br></br>
                 <label>Title</label>
-                <input title="title" value={this.state.title}
+                <textarea className="inputBox" title="title" value={this.state.title}
                     onChange={this.handleChange}
                     onBlur={this.handleBlur}
                 />
                 <br></br>
                 <label>Description</label>
-                <input title="description" value={this.state.description} 
+                <textarea className="inputBox" title="description" value={this.state.description} 
                     onChange={this.handleChange} 
                 />
                 <br></br>
                 <label>Preview</label>
-                <input title="preview" value={this.state.preview} 
+                <textarea className="inputBox" title="preview" value={this.state.preview} 
                     onChange={this.handleChange} 
                 />
                 <br></br>
                 <label>Date example=("02-01-21")</label>
-                <input title="date" value={this.state.date} 
+                <textarea className="inputBox" title="date" value={this.state.date} 
                     onChange={this.handleChange} 
                 />
                 {buttons}

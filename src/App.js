@@ -48,7 +48,6 @@ class App extends React.Component {
   updateAlert(key, entry) {
     var alerts = this.state.alerts;
     alerts[key] = entry;
-    console.log("nana",alerts[key]);
     //this.setState({ data: data });
     this.setState({ alerts: alerts });
    
@@ -63,7 +62,6 @@ removeAlert(key) {
 addAlert(key, entry) {
   var alerts = this.state.alerts;
   alerts[key] = entry;
-  console.log("test51",alerts)
   this.setState({alerts: alerts});
 }
 
@@ -71,7 +69,6 @@ addAlert(key, entry) {
 updateUpdate(key, entry) {
   var updates = this.state.updates;
   updates[key] = entry;
-  console.log("nana",updates[key]);
   //this.setState({ data: data });
   this.setState({ updates: updates });
  
@@ -86,7 +83,6 @@ this.setState({updates: updates});
 addUpdate(key, entry) {
 var updates = this.state.updates;
 updates[key] = entry;
-console.log("test51",updates)
 this.setState({updates: updates});
 }
 
@@ -96,7 +92,6 @@ this.setState({updates: updates});
       var data = this.state.data;
       var parentId = data[key].parent;
       var parents = data[parentId];
-      console.log("test4",parents);
       delete parents.children[key];
       data[key] = entry;
       //this.setState({ data: data });

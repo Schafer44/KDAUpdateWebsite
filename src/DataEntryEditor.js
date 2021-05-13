@@ -3,7 +3,6 @@ import React from 'react';
 class DataEntryEditor extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = props.item;
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -32,7 +31,7 @@ class DataEntryEditor extends React.Component {
                 <p>{this.state.name}</p>
                 <br></br>
                 <label>Name</label>
-                <input name="name" value={this.state.name} 
+                <textarea className="inputBox" name="name" value={this.state.name} 
                     onChange={this.handleChange} 
                
                     />
@@ -69,9 +68,21 @@ class DataEntryEditor extends React.Component {
                 <br></br>
                 
                 <label>Examples</label>
-                <input name="examples" value={this.state.examples} 
+                <textarea className="inputBox" name="examples" value={this.state.examples} 
                     onChange={this.handleChange} 
                 />    
+                <br></br>
+                
+                <label>Regulatory Requirements</label>
+                <textarea className="inputBox" name="regulation" value={this.state.regulation} 
+                    onChange={this.handleChange} 
+                />
+                <br></br>
+                
+                <label>Regulatory Requirements Optional URL</label>
+                <textarea className="inputBox" name="regulationURL" value={this.state.regulationURL} 
+                    onChange={this.handleChange} 
+                />
                 {
                 // description 
                 // examples 

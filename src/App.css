@@ -68,3 +68,9 @@ div:after
     transform: rotate(360deg);
   }
 }
+
+.inputBox{
+  width:500px;
+  height: 36px;
+  font-size: 12px;
+}

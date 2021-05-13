@@ -1,6 +1,6 @@
 import React from 'react';
 
-class DataUpdateCreator extends React.Component {
+class DataAlertCreator extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,10 +26,12 @@ class DataUpdateCreator extends React.Component {
         });
      
     }
+
+
     handleSubmit(event) {
         const key = this.state.title.replace(/[^a-zA-Z]/g, "");
         const entry = this.state;
-        this.props.addUpdate(key, entry);
+        this.props.addAlert(key, entry);
         
         
     }
@@ -40,8 +42,9 @@ class DataUpdateCreator extends React.Component {
         return (
        // 
        <>
-            <div>
-                <button onClick={this.handleSubmit} >Add Update</button>
+            
+                <div>
+                <button onClick={this.handleSubmit} >Add Alert</button>
                 <br></br>
                 <label>Title</label>
                 <textarea className="inputBox" name="title" value={this.state.name}
@@ -75,4 +78,4 @@ class DataUpdateCreator extends React.Component {
     }
 }
 
-export default DataUpdateCreator;
+export default DataAlertCreator;

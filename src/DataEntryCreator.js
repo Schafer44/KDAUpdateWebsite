@@ -3,7 +3,6 @@ import React from 'react';
 class DataEntryCreator extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = {
             name: "name",
             type: "entry",
@@ -37,7 +36,6 @@ class DataEntryCreator extends React.Component {
     handleSubmit(event) {
         const key = this.state.name.replace(/[^a-zA-Z]/g, "");
         const entry = this.state;
-        console.log(key, entry);
         this.state.type = "entry";
         this.props.addEntry(key, entry);
         
@@ -59,7 +57,6 @@ class DataEntryCreator extends React.Component {
     handleSubmit2(event) {
         const key = this.state.name.replace(/[^a-zA-Z0-9]/g, "");
         const entry = this.state;
-        console.log(key, entry);
         this.state.type="category";
         this.props.addEntry(key, entry);
         
@@ -76,7 +73,7 @@ class DataEntryCreator extends React.Component {
                 <button onClick={this.handleSubmit} >Add Entry</button>
                 <br></br>
                 <label>Name</label>
-                <input name="name" value={this.state.name}
+                <textarea className="inputBox" name="name" value={this.state.name}
                     onChange={this.handleChange}
                     
                 />
@@ -117,21 +114,34 @@ class DataEntryCreator extends React.Component {
                 </select>
                 <br></br>
                 <label>Description</label>
-                <input name="description" value={this.state.description} 
+                <textarea className="inputBox" name="description" value={this.state.description} 
                     onChange={this.handleChange} 
                 />
                 <br></br>
                 <label>Examples</label>
-                <input name="examples" value={this.state.examples} 
+                <textarea className="inputBox" name="examples" value={this.state.examples} 
                     onChange={this.handleChange} 
                 />
+
+                <br></br>
+                
+                <label>Regulatory Requirements</label>
+                <textarea className="inputBox" name="regulation" value={this.state.regulation} 
+                    onChange={this.handleChange} 
+                />
+                <br></br>
+                
+                <label>Regulatory Requirements Optional URL</label>
+                <textarea className="inputBox" name="regulationURL" value={this.state.regulationURL} 
+                    onChange={this.handleChange} 
+                />      
 
                 </div>
                 <div>
                 <button onClick={this.handleSubmit2} >Add Category</button>
                 <br></br>
                 <label>Name</label>
-                <input name="name" value={this.state.name}
+                <textarea className="inputBox" name="name" value={this.state.name}
                     onChange={this.handleChange}
                     
                 />
